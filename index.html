@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font awesome -->
     <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
 
@@ -54,7 +56,7 @@
           <div class="col-md-5 order-md-first">
             <div class="home-text text-light">
               <h1 class="">Hi, I'm Halomoan Filipus Simarmata</h1>
-              <h5 class="text-warning">Backend Developer | College Student</h5>
+              <h5 class="text-warning desc"></h5>
               <p>Working as an Backend Developer, I enjoy creating simple, beautiful and intuitives design!</p>
               <a href="#project" class="btn btn-warning fw-bold px-3 me-4">My Work</a>
               <a href="https://github.com/" class="text-white me-3 fs-3 "><i class="fab fa-github"></i></a>
@@ -81,10 +83,10 @@
         </div>
         <div class="row text-light justify-content-center">
           <div class="col-md-5">
-            <div class="about-text text-center ">
+            <div class="about-text text-center " data-aos="zoom-in-down" data-aos-duration="2000">
                 
-              <p class="fs-5">Hello, my name is Halomoan Filipus Simarmata, my friends called me Moan. I'm an information systems student. </p>
-              <p class="fs-5">These days I'm developing a travel website for my area, to promote tourist attractions that are there. I also like to play games, if you want to play together just contact me ; ) </p>
+              <p class="fs-5 text-center">Hello, my name is Halomoan Filipus Simarmata, my friends called me Moan. I'm an information systems student. </p>
+              <p class="fs-5 text-center">These days I'm developing a travel website for my area, to promote tourist attractions that are there. I also like to play games, if you want to play together just contact me ; ) </p>
             </div>
           </div>
         </div>
@@ -102,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="row text-center justify-content-center">
+        <div class="row text-center justify-content-center" >
           <div class="col-mb-5 col-lg-3 m-4">
             <div class="service-item shadow-sm p-4 rounded bg-dark border border-white h-100">
               <div class="icon my-3 text-warning fs-2">
@@ -155,9 +157,9 @@
           </div>
           <div class="col-md-6 col-lg-5 mt-3">
             <div class="portfolio-item">
-              <img src="img/project/2.png" class="img-thumbnail" alt="portofolio-item" />
+              <img src="img/project/4.png" class="img-thumbnail" alt="portofolio-item" />
               <h4 class="text-light mt-3">lovely wallpaper</h4>
-              <a href="#" class="text-warning text-decoration-none">Live Demo</a>
+              <a href="https://moanfs.github.io/" class="text-warning text-decoration-none">Live Demo</a>
             </div>
           </div>
         </div>
@@ -183,33 +185,37 @@
     <section class="contact py-5" id="contact">
       <div class="container py-4">
         <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-4 text-center">
+            <div class="alert alert-info alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Thanks! </strong> Your message has been sent.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <form action="" name="email-subscribers">
               <div class="row">
                   <div class="col-lg-12 mb-4">
-                    <input type="text" placeholder="name" name="nama" class="form-control form-control-lg fs-6 border-0 shodow-sm" />
+                    <input type="text" placeholder="name" name="nama" class="form-control form-control-lg fs-6 border-0 shodow-sm" data-aos="fade-down" data-aos-duration="2000" data-aos-offset="400" />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-lg-12 mb-4">
-                    <input type="email" placeholder="email" name="email" class="form-control form-control-lg fs-6 border-0 shodow-sm" />
+                    <input type="email" placeholder="email" name="email" class="form-control form-control-lg fs-6 border-0 shodow-sm" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="400"/>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-lg-12 mb-4">
-                    <input type="text" placeholder="subject" name="subject" class="form-control form-control-lg fs-6 border-0 shodow-sm" />
+                    <input type="text" placeholder="subject" name="subject" class="form-control form-control-lg fs-6 border-0 shodow-sm"data-aos="fade-left" data-aos-duration="2000" data-aos-offset="400" />
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-12 mb-4">
+                  <div class="col-lg-12 mb-4" data-aos="fade-up" data-aos-duration="2000" >
                     <textarea rows="5" placeholder="massage" name="pesan" class="form-control form-control-lg fs-6 border-0 shodow-sm"></textarea>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-lg-12">
-                    <button type="submit" class="btn btn-danger px-3 btn-kirim">Send Message</button>
+                    <button data-aos="zoom-in" data-aos-duration="2000" type="submit" class="btn btn-warning px-3 fw-bold btn-kirim">Send Message</button>
 
-                    <button class="btn btn-danger btn-loading d-none" type="button" disabled>
+                    <button  class="btn btn-warning fw-bold btn-loading d-none" type="button" disabled>
                       <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                       Loading...
                     </button>
@@ -240,5 +246,55 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!-- animasi -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.desc', {
+        duration: 4,
+
+        text: 'Backend Developer | College Student',
+      });
+      gsap.from('.profile', { duration: 1, y: -100, opacity: 0 });
+      gsap.from('.', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+    </script>
+
+    <!-- akhir animasi -->
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyQI50ifcYkvfh_rb3pAsR01Lpx1ELhDQPyHsO8wXv5CHqrrhjPbLgkqe0XAMFPWNCD4w/exec';
+      const form = document.forms['email-subscribers'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loding, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // Tampilkan Alert
+            myAlert.classList.toggle('d-none');
+            // Reset form
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
   </body>
 </html>
