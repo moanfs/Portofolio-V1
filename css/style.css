@@ -1,3 +1,14 @@
 .navbar-brand {
   color: yellow;
 }
+.portfolio-item{
+  /* border-radius: 20%; */
+  box-shadow: inset;
+  border: 20%, 20%, #fff;
+  height: 200;
+}
+.img img-thumbnail {
+  border: 10px;
+  box-shadow: 20px;
+  width: 200;
+}
